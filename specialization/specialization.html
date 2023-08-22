@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Specialization.</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.6.3/css/foundation.min.css">
+  <style>
+    /* Hide the dropdown content by default */
+    .dropdown-content {
+      display: none;
+    }
+
+    /* Show the dropdown content when the dropdown is hovered */
+    .has-dropdown:hover .dropdown-content {
+      display: block;
+    }
+  </style>
+</head>
+<body> 
+
+
+<!-- menu -->
+<div class="contain-to-grid">
+  <nav class="top-bar" data-topbar>
+    <ul class="title-area">
+      <li class="name">
+        <h1><a href="/carl/carl.html">CarlUvebrant</a></h1>
+    </ul>
+
+    <section class="top-bar-section">
+      <!-- Right Nav Section -->
+      <ul class="right">
+	  	<li class=""><a href="/me/me.html">A Little About Me</a></li>
+		<li class=""><a href="/portfolio/portfolio.html">Portfolio</a></li>
+		<li class=""><a href="/specialization/specialization.html">Specialization In School</a></li>
+        <li class="has-dropdown">
+          <a href="#">Projects in School</a>
+          <ul class="dropdown dropdown-content">
+            <li><a href="/canstrike/canstrike.html">CanStrike.</a></li>
+            <li><a href="/zenith/zenith.html">Zenith.</a></li>
+            <li><a href="/spite/spite.html">Spite: Journey to the Top.</a></li>
+            <li><a href="/brewmaster/brewmaster.html">Brewmaster.</a></li>
+            <li><a href="/popover/popover.html">Popover.</a></li>
+            <li><a href="/magequit/magequit.html">Magequit.</a></li>
+            <li><a href="/littlecrimson/littlecrimson.html">Littlecrimson.</a></li>
+            <li><a href="/backtoschool/backtoschool.html">BackToSchool.</a></li>
+          </ul>
+        </li>
+       	  	  <li class=""><a href="/homeproject/homeproject.html">Home Projects</a></li>
+      </ul>
+    </section>
+  </nav>
+</div>
+  
+  
+  <div id="wrapper">
+    <div class="hero">
+       <div class="row">
+         <div class="large-12 columns">
+
+<h1 style="text-align:center; font-size:36px; font-weight:bold;">Specialization.</h1>
+<h1 style="text-align:center; font-size:16px; font-weight:normal;">by Carl Uvebrant.</h1>
+<img src="/img/special/fallingsandgame.png" alt="fallingsandgame" style="display:block; margin:auto; width:10%; height:auto;">
+<h2 style="font-size:24px; font-weight:bold;">Specialization TLDR:</h2>
+<p>
+I tryed making a falling sand game in <a href="https://www.reddit.com/r/Tga2D/">TGA2D</a> and it did not go as planed but i worked with/around my problems to get a some ok working game at the end,
+I hope to improve on this as i have extra free time and make it better.
+</p>
+
+<h2 style="font-size:24px; font-weight:bold;">During my specialization project:</h2>
+
+
+	<div style="display: flex; justify-content: center; align-items: center;">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/ajJqGLW3qHU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+<p>
+
+I attempted to create a game simular to a Falling Sand game using the <a href="https://www.reddit.com/r/Tga2D/">TGA2D</a> game engine. </br>	
+ I set up a sand world to control everthing, a sand manager to manage all the sand and then i utilized imgui to take care of all the UI elements. 
+ I used sprite batch rendering for the sand.
+ I tryed using a Grid system and threading the sandmanager to make it faster.
+ </br>	
+ </br>	
+ The UI is at the bottem with showing current amount of sand in the world, the sandtype selected, current mouse position, buttions for all the diffrent sand types in there colors, a slider for brush size and last a buttion to turn on off the walls"Collider so no sand can fall out side the screen"
+ Made a brush for spawning sand depending on brush size. 
+ </br>	
+ </br>	
+ I all so made a image to sand converter that takes in an image eather via a line of code or by drag and drop in to game window, then converts the images pixels to the closest type of sand and spawns it in the sand world.
+</br>	
+</br>	
+One thing i did wrong is after week 2 when i hit problems with batch rendering i needed to step back and rework my plan, but in stread under all the stress i just keep trying to get it to work for too long, and lost a lot off time to my batch rendering problem.
+If i where to do one thing diffrently i would have if i had more time set up a bare bones engine my self, or having the same time used a more well documented engine.
+</br>	
+I rendered the sand by using an 1 by 1 image and then just got the mouse Position and spawned it.
+
+
+
+<ul>
+Plan:
+  <li>Week:1: Research Falling sand game,Download TGA2D,Set up perforce, and get a base game working, </li>
+  <li>Week:2: Add SandWorld, Sand, Sand Type, SandManager.  </li>
+	<li>Week:3: Add Grid/Chunks, Threding,ObjectPool. </li>
+	<li>Week:4: 3 days Optimzation, 1 days Debugging.</li>
+	<li>Week:5: 4 days Polish/Debugging.</li>
+<p>
+</p>
+	
+	Each week thursday was a debuging day and friday i toke a step back and looked where i am and where i need to be and agusted the plan from there so this did not hold for long.
+<p>
+</p>	
+	What actually happened:
+  <li>Week:1: Research Falling sand game,Download TGA2D,Set up perforce, and get a base game working, </li>
+  <li>Week:2: Add SandWorld, Sand, Sand Type, SandManager.</li>
+	<li>Week:3: Add SpriteBatch,Threding,ObjectPool. Had problems with batch rendering.</li>
+	<li>Week:4: 1 days Optimzation, 3 days Debugging. Had progress with batch rendering.</li>
+	<li>Week:5: 2 days Polish, 2 days Debugging. Got batch rendering working but it was a little to late. when into crisis management to save what i have and show what i had done.</li>
+</ul>
+<p>
+</p>
+<p>
+</p>
+<ul>
+Classes i made in the prossece:
+  <li>Sand.cpp, holds Collider,Sprite,Texture,Position,Velocity,Size,Acceleration,Density,Friction,Type,Name,ID,Gravity .</li>
+  <li>SandManager.cpp, keeps track off all the sand, spawning, removing, anything to do with sand manipluation.</li>
+  <li>SandType.cpp, holds sand type parameters like: Name,ToolTip and texturePath.</li>
+  <li>SandWorld.cpp, centralized control over game.</li>
+  <li>Object Pool.hpp, set up a basic objectpool .</li>
+  <li>UI.cpp, handles all UI with help from imgui.</li>
+  <li>Utilities.hpp, holds funktons for drag and drop.</li>
+</ul>
+<p>
+</p>
+<p>
+</p>
+<ul>
+SandType:
+  <li>Sand, sinks in water.</li>
+  <li>Water, eats salt.</li>
+  <li>Water Well, water source.</li>
+  <li>Stone, dont move.</li>
+  <li>Fire, burns stuff.</li>
+  <li>Torch, fire source.</li>
+  <li>Plant, grows if gets water.</li>
+  <li>Oil, burns on contact with fire.</li>
+  <li>Oil Well, oil source.</li>
+  <li>Methane, steam but flamable</li>
+  <li>Eraser, removes other sands.</li>
+  <li>Salt, disolves in water.</li>
+  <li>Acid, eats most things but all so deluse it self in the prosece.</li>
+  <li>Steam, when fire meets water</li>
+  <li>Lava, a mix of fire and stone</li>
+</ul>
+
+</p>
+
+	<div style="display: flex; justify-content: center; align-items: center;">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/r7dr6SH_Bj0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+
+
+<div class="gallery">
+  <figure>
+    <img src="/img/special/salt.png" alt="">
+    <figcaption>Spawning some salt.</figcaption>
+  </figure>
+  <figure>
+    <img src="/img/special/stone.png" alt="">
+    <figcaption>Spawned some stone that does not move.</figcaption>
+  </figure>
+  <figure>
+    <img src="/img/special/fire.png" alt="">
+    <figcaption>Spawned some fire.</figcaption>
+  </figure>
+  <figure>
+    <img src="/img/special/imageassand.png" alt="">
+    <figcaption>Turned an ok image into sand.</figcaption>
+  </figure>
+</div>
+
+
+         </div>
+       </div>
+    </div>
+    <div id="lowerContainer" class="row">
+      <div id="content" class="large-12 columns">
+
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="row">
+      <div class="large-12 columns">
+        <div class="row">
+         
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
